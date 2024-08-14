@@ -31,7 +31,7 @@
     --main-font-2: "Josefin Sans Light", sans-serif;
     --secondary-font: "SourceSansPro Regular", sans-serif;
     --main-color: #B35F45;
-    --white-pinkish-color : #D8E2DC;
+    --white-pinkish-color: #D8E2DC;
     --white-color: #fff;
 }
 
@@ -58,6 +58,7 @@ section {
 
 a {
     text-decoration: none;
+    color: var(--main-color);
 }
 
 p {
@@ -88,7 +89,8 @@ h4 {
     margin-bottom: 1.6rem;
 }
 
-h2, h4 {
+h2,
+h4 {
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
@@ -212,7 +214,7 @@ h2, h4 {
     background-color: var(--main-color);
 }
 
-.btn-green:hover{
+.btn-green:hover {
     color: var(--main-color);
 }
 
@@ -232,7 +234,7 @@ header {
 }
 
 .navbar {
-    background-color: var(--white-pinkish-color   );
+    background-color: var(--white-pinkish-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -275,7 +277,7 @@ header {
     background-color: rgba(69, 93, 88, 0.65);
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform .4s linear; 
+    transition: transform .4s linear;
 }
 
 .nav-link:hover::before {
@@ -593,9 +595,12 @@ footer {
 /*                    ABOUT PAGE                   */
 
 .excellent-service {
-    background: url("images/excellent-img.jpg") center no-repeat;
+    background: url("images/hero-bg.jpg") center no-repeat;
     background-size: cover;
     min-height: 65vh;
+    filter: grayscale(13%) sepia(25%) brightness(65%) saturate(105%) contrast(84%);
+    -webkit-filter: grayscale(13%) sepia(25%) brightness(65%) saturate(105%) contrast(84%);
+    -moz-filter: grayscale(13%) sepia(25%) brightness(65%) saturate(105%) contrast(84%);
 }
 
 .excellent-service .container {
@@ -678,11 +683,12 @@ footer {
     margin-bottom: 3rem;
 }
 
-.contact input, textarea {
+.contact input,
+textarea {
     display: block;
     width: 100%;
     background: transparent;
-    border: 1px solid rgba(0,0,0,.18);
+    border: 1px solid rgba(0, 0, 0, .18);
     outline: none;
     padding: 1.7rem 1.5rem;
     font-family: var(--main-font-2);
@@ -767,15 +773,15 @@ textarea {
         transition: all .5s;
     }
 
-    #check:checked ~ .nav-list {
+    #check:checked~.nav-list {
         left: 0;
     }
 
-    #check:checked ~ label #open {
+    #check:checked~label #open {
         display: none;
-    } 
+    }
 
-    #check:checked ~ label #close {
+    #check:checked~label #close {
         display: block;
         position: relative;
         z-index: 100000;
@@ -795,7 +801,7 @@ textarea {
         background-color: transparent;
         transition: all .3s;
     }
-    
+
     .book-btn:hover {
         border: .2rem solid var(--white-color);
         color: var(--white-pinkish-color);
@@ -882,4 +888,19 @@ textarea {
         opacity: 0;
         transform: translateY(-1rem);
     }
+}
+
+.habitacionesDescripcion {
+    margin-bottom: 2em;
+}
+
+.h2Habitaciones {
+    font-size: large
+}
+
+.h1Habitaciones {
+    font-size: xx-large;
+}
+.mb-2{
+    margin-bottom: 1em;
 }

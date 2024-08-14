@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones | La Ramadita</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
-     <!-- NAVBAR -->
-     <div class="container">
+    <!-- NAVBAR -->
+    <div class="container">
         <nav class="navbar">
             <a class="logo" href="index.html">La Ramadita</a>
             <input type="checkbox" id="check">
@@ -35,98 +37,147 @@
     <section id="rooms-list" class="rooms-list">
         <div class="container container-medium">
             <div class="row row-2">
-                <h2>Habitaciones</h2>
-                
+                <h1 class="h1Habitaciones">Habitaciones</h1>
+
             </div>
             <div class="row">
                 <div class="col-2">
                     <div class="room-image">
-                        <img src="images/room-1.jpg" alt="room">
+                        <div class="glide" id="glide1">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="images/laramadita-suites.png"
+                                            alt="Suites de Lujo La Ramadita"></li>
+                                    <li class="glide__slide"><img src="images/laramadita-suites-2.png"
+                                            alt="Suite de Lujo La Ramadita"></li>
+                                    <li class="glide__slide"><img src="images/bano-suites-2.png"
+                                            alt="Baño de Lujo La Ramadita"></li>
+                                    <li class="glide__slide"><img src="images/bano-suites.png"
+                                            alt="Baño de Lujo La Ramadita"></li>
+                                    <li class="glide__slide"><img src="images/balcon-suites.png"
+                                            alt="Balcón de Lujo La Ramadita"></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="room-info">
                         <div>
-                            <h4>Deluxe Black Room</h4>
-                            <p>A spacious deluxe room which has a double bed and a single bed. Ideal for any...</p>
-                            <p class="price"><span>$150</span> / night</p>
-                            <a href="#">More Details</a>
+                            <h2 class="h2Habitaciones">Suite de Lujo</h2>
+                            <p class="habitacionesDescripcion">Nuestras suites cuentan con aire, tv con netflix, wi-fi,
+                                sommiers hoteleros con ropa blanca de calidad premium, pava eléctrica, frigobar, caja
+                                fuerte, percheros eléctricos y una linda vista a la montaña. Incluye desayuno
+                                continental.</p>
+                            <!-- <p class="price"><span>$150</span> / night</p> -->
+                            <a href="api.whatsapp.com/send/?phone=5493516133873">Consultar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="room-image">
-                        <img src="images/room-2.jpg" alt="room">
+                        <div class="glide" id="glide2">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="images/cabana-habitacion.png"
+                                            alt="Cabaña en La Ramadita Fiambalá"></li>
+                                    <li class="glide__slide"><img src="images/cabana-habitacion-2.png"
+                                            alt="Cabaña en La Ramadita Fiambalá"></li>
+                                    <li class="glide__slide"><img src="images/cabana-entrada.png"
+                                            alt="Entrada de cabaña en La Ramadita Fiambalá">
+                                    </li>
+                                    <li class="glide__slide"><img src="images/cabana-comedor.png"
+                                            alt="Comedor de cabaña en La Ramadita Fiambalá">
+                                    </li>
+                                    <li class="glide__slide"><img src="images/cabana-bano.png"
+                                            alt="Cabaña baño en La Ramadita Fiambalá">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="room-info">
                         <div>
-                            <h4>Studio Broadway Room</h4>
-                            <p>A spacious deluxe room which has a double bed and a single bed. Ideal for any...</p>
-                            <p class="price"><span>$150</span> / night</p>
-                            <a href="#">More Details</a>
+                            <h2 class="h2Habitaciones">Cabaña para 4 personas</h2>
+                            <p class="habitacionesDescripcion">Nuestra Cabaña de adobe cuenta con una habitación
+                                matrimonial, un comedor con heladera, microondas y pava electrica, y un espacio abierto
+                                donde se ubican dos camas más o una matrimonial, y dos aires frio-calor. Incluye
+                                desayuno continental.</p>
+                            <!-- <p class="price"><span>$150</span> / night</p> -->
+                            <a href="api.whatsapp.com/send/?phone=5493516133873">Consultar</a>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col-2">
                     <div class="room-image">
-                        <img src="images/room-3.jpg" alt="room">
+                        <div class="glide" id="glide3">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="images/triple-habitacion.png"
+                                            alt="Habitación Triple en La Ramadita Fiambalá"></li>
+                                    <li class="glide__slide"><img src="images/triple-habitacion-2.png"
+                                            alt="Habitación Triple en La Ramadita Fiambalá"></li>
+                                    <li class="glide__slide"><img src="images/triple-bano.png"
+                                            alt="Baño de Habitación Triple en La Ramadita Fiambalá">
+                                    </li>
+                                    <li class="glide__slide"><img src="images/triple-entrada.png"
+                                            alt="Entrada de Habitación Triple en La Ramadita Fiambalá">
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="room-info">
                         <div>
-                            <h4>Standart One Person Room</h4>
-                            <p>A spacious deluxe room which has a double bed and a single bed. Ideal for any...</p>
-                            <p class="price"><span>$150</span> / night</p>
-                            <a href="#">More Details</a>
+                            <h2 class="h2Habitaciones">Habitación Triple</h2>
+                            <p class="habitacionesDescripcion">Nuestra habitación triple cuenta con tv con cable, aire frío-calor, sommiers hoteleros
+                                con ropa blanca de calidad premium, baño privado y wi-fi. Incluye desayuno continental.
+                            </p>
+                            <!-- <p class="price"><span>$150</span> / night</p> -->
+                            <a href="api.whatsapp.com/send/?phone=5493516133873">Consultar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="room-image">
-                        <img src="images/room-4.jpg" alt="room">
+                        <div class="glide" id="glide4">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="images/doble-habitacion.png"
+                                            alt="Habitación Triple en La Ramadita Fiambalá"></li>
+                                    <li class="glide__slide"><img src="images/doble-habitacion-2.png"
+                                            alt="Habitación Triple en La Ramadita Fiambalá"></li>
+                                    <li class="glide__slide"><img src="images/doble-entrada.png"
+                                            alt="Entrada de Habitación Triple en La Ramadita Fiambalá">
+                                    </li>
+                                    <li class="glide__slide"><img src="images/doble-bano.png"
+                                            alt="Baño de Habitación Triple en La Ramadita Fiambalá">
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="room-info">
                         <div>
-                            <h4>Studio Small Room</h4>
-                            <p>A spacious deluxe room which has a double bed and a single bed. Ideal for any...</p>
-                            <p class="price"><span>$150</span> / night</p>
-                            <a href="#">More Details</a>
+                            <h2 class="h2Habitaciones">Habitación Doble</h2>
+                            <p class="habitacionesDescripcion">Nuestras habitaciones dobles cuentan con tv con cable, aire frío-calor, sommiers
+                                hoteleros con ropa blanca de calidad premium, baño privado y wi-fi. Incluye desayuno
+                                continental.</p>
+                            <!-- <p class="price"><span>$150</span> / night</p> -->
+                            <a href="api.whatsapp.com/send/?phone=5493516133873">Consultar</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="room-image">
-                        <img src="images/room-5.jpg" alt="room">
-                    </div>
-                    <div class="room-info">
-                        <div>
-                            <h4>Studio Corporate Room</h4>
-                            <p>A spacious deluxe room which has a double bed and a single bed. Ideal for any...</p>
-                            <p class="price"><span>$150</span> / night</p>
-                            <a href="#">More Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="room-image">
-                        <img src="images/room-6.jpg" alt="room">
-                    </div>
-                    <div class="room-info">
-                        <div>
-                            <h4>Deluxe Twin Room</h4>
-                            <p>A spacious deluxe room which has a double bed and a single bed. Ideal for any...</p>
-                            <p class="price"><span>$150</span> / night</p>
-                            <a href="#">More Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
     <!-- FOOTER SECTION -->
-     <footer>
+    <footer>
         <div class="container">
             <div class="back-to-top">
                 <a href="#hero"><i class="fas fa-chevron-up"></i></a>
@@ -134,14 +185,16 @@
             <div class="footer__content row">
                 <div class="col-3">
                     <h4>Nosotros</h4>
-                    <p>La Ramadita es una posada rural ubicada en Fiambalá que se encuentra en un entorno andino, caracterizada por su cálida decoración y atención al huésped.</p>
+                    <p>La Ramadita es una posada rural ubicada en Fiambalá que se encuentra en un entorno andino,
+                        caracterizada por su cálida decoración y atención al huésped.</p>
                 </div>
 
                 <div class="col-3">
                     <h4>Te Esperamos</h4>
-                    <p>La Ramadita te está esperando para que puedas disfrutar del hermoso entorno natural y de todas nuestras instalaciones.</p>
+                    <p>La Ramadita te está esperando para que puedas disfrutar del hermoso entorno natural y de todas
+                        nuestras instalaciones.</p>
                 </div>
-               
+
                 <div class="col-3">
                     <h4>Seguínos</h4>
                     <p>Podés seguirnos en nuestras redes para no perderte nada</p>
@@ -151,14 +204,15 @@
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
-                        
+
                         <li>
                             <a href="https://www.instagram.com/laramadita.fiambala/?hl=es">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.tripadvisor.com.ar/Hotel_Review-g2424785-d23322224-Reviews-La_Ramadita_Posada_Rural-Fiambala_Province_of_Catamarca_Northern_Argentina.html">
+                            <a
+                                href="https://www.tripadvisor.com.ar/Hotel_Review-g2424785-d23322224-Reviews-La_Ramadita_Posada_Rural-Fiambala_Province_of_Catamarca_Northern_Argentina.html">
                                 <i class="fab fa-tripadvisor"></i>
                             </a>
                         </li>
@@ -167,6 +221,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Glide.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const glide1 = new Glide('#glide1', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+
+            const glide2 = new Glide('#glide2', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+            const glide3 = new Glide('#glide3', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+
+            const glide4 = new Glide('#glide4', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+        });
+
+    </script>
 </body>
 
 </html>
