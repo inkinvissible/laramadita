@@ -32,7 +32,7 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
-        
+
         <div class="container">
             <h1 class="h1Habitaciones mb-2">Contacto</h1>
             <div class="row">
@@ -44,18 +44,18 @@
                     <div>
                         <h3>Virgen del Valle, Fiambalá</h3>
                         <p>Catamarca</p>
-                        
+
                     </div>
                     <div>
                         <h3>Reservaciones</h3>
                         <p><a href="api.whatsapp.com/send/?phone=5493516133873">WhatsApp: 351 613-3873</a></p>
-                        
+
                     </div>
                 </div>
                 <div class="col-2">
                     <form id="whatsappForm">
                         <input type="text" id="name" placeholder="Nombre" required>
-                        
+
                         <textarea row="20" id="message" cols="20" placeholder="Tu mensaje" required></textarea>
                         <button class="btn btn-white">Enviar</button>
                     </form>
@@ -68,7 +68,7 @@
     <footer>
         <div class="container">
             <div class="back-to-top">
-                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+                <a href="#contact"><i class="fas fa-chevron-up"></i></a>
             </div>
             <div class="footer__content row">
                 <div class="col-3">
@@ -110,21 +110,23 @@
         </div>
     </footer>
     <script>
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+        document.getElementById('whatsappForm').addEventListener('submit', function (e) {
             e.preventDefault(); // Previene que el formulario se envíe de la manera tradicional
-        
+
             // Obtiene los valores del formulario
             var name = document.getElementById('name').value;
             var message = document.getElementById('message').value;
-        
+
             // Crea el enlace de WhatsApp con los datos del formulario
-            var whatsappUrl = 'https://api.whatsapp.com/send?phone=5493516133873&text=' + 
+            var whatsappUrl = 'https://api.whatsapp.com/send?phone=5493516133873&text=' +
                 encodeURIComponent('Nombre: ' + name + '\nMensaje: ' + message);
-        
+
             // Redirige al usuario a WhatsApp
             window.open(whatsappUrl, '_blank');
         });
-        </script>
+    </script>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
