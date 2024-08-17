@@ -470,7 +470,9 @@ footer {
     justify-content: space-between;
     padding: 1.5rem 0;
 }
-
+.footer__content__esperamos{
+    width: 50%;
+}
 .social-icons,
 .payment-methods {
     margin-top: 2.5rem;
@@ -593,7 +595,9 @@ footer {
 .menu-table .col-2 div {
     margin-bottom: 4rem;
 }
-
+.menu-gallery img{
+    border-radius: 2px;
+}
 /*                    ABOUT PAGE                   */
 
 .excellent-service {
@@ -873,6 +877,9 @@ textarea {
     .rooms-list .col-2:not(:last-child) {
         margin-right: 0;
     }
+    .footer__content__esperamos{
+        width: 100%;
+    }
 }
 
 /* ANIMATIONS */
@@ -912,3 +919,45 @@ textarea {
 .mt-4{
     margin-top: 4rem;
 }
+.mb-6{
+    margin-bottom: 6rem;
+}
+
+/* styles.css */
+/* styles.css */
+.fixed-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 100;
+}
+
+.icon {
+    font-size: 40px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #25d366; /* Color de fondo para WhatsApp */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.icon.maps {
+    background-color: var(--white-color);
+    color: var(--main-color); /* Color de fondo para Google Maps */
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
